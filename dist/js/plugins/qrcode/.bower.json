@@ -1,0 +1,15 @@
+{
+  "name": "qrcode",
+  "homepage": "https://github.com/aralejs/qrcode",
+  "version": "3.0.5",
+  "_release": "3.0.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.0.5",
+    "commit": "f88805d24b130083cd01ec49e6324813229bd7ec"
+  },
+  "_source": "git@github.com:aralejs/qrcode.git",
+  "_target": "~3.0.5",
+  "_originalSource": "git@github.com:aralejs/qrcode.git",
+  "_direct": true
+}

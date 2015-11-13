@@ -1,0 +1,761 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Animatecss</title>
+	<!-- Tell the browser to be responsive to screen width -->
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<!--favicon-->
+	<link rel="shortcut icon" type="image/x-icon" href="../../dist/img/favicon.ico">
+	<!-- Bootstrap 3.3.5 -->
+	<link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="../../dist/css/font-awesome.min.css">
+	<!-- Theme style -->
+	<link rel="stylesheet" href="../../dist/css/s-next.css">
+
+	<!--animatecss-->
+	<link rel="stylesheet" href="../../dist/js/plugins/animate.css/animate.min.css">
+	<!--让IE9兼容响应式!!!-->
+	<!--[if lt IE 9]>
+	<script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<style type="text/css" media="screen">
+		/*-----------------------------------*\
+		$OBJECTS
+		\*-----------------------------------*/
+
+		.butt,
+		.input {
+			padding: .75rem;
+			margin: .375rem;
+			background-color: transparent;
+			border-radius: 4px;
+			}
+
+		.butt:focus,
+		.input:focus {
+			outline: none;
+			}
+
+		.butt {
+			border: 2px solid #f35626;
+			line-height: 1.375;
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+			font-weight: 700;
+			color: #f35626;
+			cursor: pointer;
+			-webkit-animation: hue 60s infinite linear;
+			}
+
+		.input {
+			border: 1px solid #c0c8c9;
+			border-radius: 4px;
+			}
+
+		.input--dropdown {
+			background-image: url("images/ddown.png");
+			background-image: url("images/ddown.svg?3"), none;
+			background-repeat: no-repeat;
+			background-size: 1.5rem 1rem;
+			background-position: right center;
+			}
+
+		/*-----------------------------------*\
+		$TYPOGRAPHY
+		\*-----------------------------------*/
+
+		h1,
+		h2,
+		.beta {
+			margin-bottom: .75rem;
+			font-weight: 400;
+			font-size: 1.5rem;
+			line-height: 1;
+			}
+
+		@media (min-width: 650px) {
+			.mega {
+				font-size: 6rem;
+				line-height: 1;
+				}
+			}
+
+		.subhead,
+		.meta {
+			color: #7b8993;
+			}
+
+		p,
+		hr,
+		form {
+			margin-bottom: 1.5rem;
+			}
+
+		hr {
+			border: none;
+			margin-top: -1px;
+			height: 1px;
+			background-color: #c0c8c9;
+			background-image: -webkit-linear-gradient(0deg, #fff, #c0c8c9, #fff);
+			}
+
+		a:hover {
+			color: #f35626;
+			}
+
+		/*-----------------------------------*\
+		$LAYOUT
+		\*-----------------------------------*/
+
+		.wrap {
+			max-width: 100%;
+			margin: 0 auto;
+			}
+
+		.island {
+			padding: 1.5rem;
+			}
+
+		/*-----------------------------------*\
+		/*-----------------------------------*\
+		$HEADER
+		\*-----------------------------------*/
+
+		.site__header {
+			-webkit-animation: bounceInUp 1s;
+			}
+
+		.site__title {
+			color: #f35626;
+			background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-webkit-animation: hue 60s infinite linear;
+			}
+
+		.site__content {
+			-webkit-animation: bounceInUp 1s;
+			-webkit-animation-delay: .1s;
+			}
+
+		.site__content form {
+			-webkit-animation: bounceInUp 1s;
+			-webkit-animation-delay: .1s;
+			}
+
+		/*-----------------------------------*\
+		$ANIMATIONS
+		\*-----------------------------------*/
+
+		@-webkit-keyframes hue {
+			from {
+				-webkit-filter: hue-rotate(0deg);
+				}
+
+			to {
+				-webkit-filter: hue-rotate(-360deg);
+				}
+			}
+	</style>
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+	<!-- Main Header -->
+	<header class="main-header">
+		<!-- Logo -->
+		<a href="../../index.html" class="logo">
+			<!-- mini logo for sidebar mini 50x50 pixels -->
+			<span class="logo-mini"><b>L</b>QH</span>
+			<!-- logo for regular state and mobile devices -->
+			<span class="logo-lg">S-NEXT</span>
+		</a>
+		<!-- Header Navbar -->
+		<nav class="navbar navbar-static-top" role="navigation">
+			<!-- Sidebar toggle button-->
+			<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+				<span class="sr-only">Toggle navigation</span>
+			</a>
+			<!-- Navbar Right Menu -->
+			<div class="navbar-custom-menu">
+				<ul class="nav navbar-nav">
+					<li class="dropdown messages-menu">
+						<!-- Menu toggle button -->
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="fa fa-envelope-o"></i>
+							<span class="label label-success">4</span>
+						</a>
+						<ul class="dropdown-menu">
+							<li class="header">您有<span>4</span>个消息</li>
+							<li>
+								<!-- inner menu: contains the messages -->
+								<ul class="menu">
+									<li>
+										<!-- start message -->
+										<a href="#">
+											<div class="pull-left">
+												<!-- User Image -->
+												<img src="../../dist/img/avatar.png" class="img-circle" alt="User Image">
+											</div>
+											<!-- Message title and timestamp -->
+											<h4>
+												S-NEXT
+												<small><i class="fa fa-clock-o"></i> 5 分钟</small>
+											</h4>
+											<!-- The message -->
+											<p>啦啦啦德玛西亚</p>
+										</a>
+									</li>
+									<!-- end message -->
+								</ul>
+								<!-- /.menu -->
+							</li>
+							<li class="footer"><a href="#">查看所有消息</a></li>
+						</ul>
+					</li>
+					<!-- /.messages-menu -->
+					<!-- Notifications Menu -->
+					<li class="dropdown notifications-menu">
+						<!-- Menu toggle button -->
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="fa fa-commenting-o"></i>
+							<span class="label label-warning">10</span>
+						</a>
+						<ul class="dropdown-menu">
+							<li class="header">您有<span>10</span>个消息</li>
+							<li>
+								<!-- Inner Menu: contains the notifications -->
+								<ul class="menu">
+									<li>
+										<!-- start notification -->
+										<a href="#">
+											<i class="fa fa-users text-aqua"></i><span>CRPER</span>
+											<small class="pull-right"><span>5</span>分钟加入</small>
+										</a>
+									</li>
+									<!-- end notification -->
+								</ul>
+							</li>
+							<li class="footer"><a href="#">查看所有</a></li>
+						</ul>
+					</li>
+					<!-- Tasks Menu -->
+					<li class="dropdown tasks-menu">
+						<!-- Menu Toggle Button -->
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="fa fa-tasks"></i>
+							<span class="label label-danger">9</span>
+						</a>
+						<ul class="dropdown-menu">
+							<li class="header">您有<span>9</span>个任务</li>
+							<li>
+								<!-- Inner menu: contains the tasks -->
+								<ul class="menu">
+									<li>
+										<!-- Task item -->
+										<a href="#">
+											<!-- Task title and progress text -->
+											<h3>
+												修复一些BUG
+												<small class="pull-right">80%</small>
+											</h3>
+											<!-- The progress bar -->
+											<div class="progress xs">
+												<!-- Change the css width attribute to simulate progress -->
+												<div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+													<span class="sr-only">完成<span>20%</span></span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<!-- end task item -->
+								</ul>
+							</li>
+							<li class="footer">
+								<a href="#">View all tasks</a>
+							</li>
+						</ul>
+					</li>
+					<!-- User Account Menu -->
+					<li class="dropdown user user-menu">
+						<!-- Menu Toggle Button -->
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<!-- The user image in the navbar-->
+							<img src="../../dist/img/avatar.png" class="user-image" alt="User Image">
+							<!-- hidden-xs hides the username on small devices so only the image appears. -->
+							<span class="hidden-xs">CRPER</span>
+						</a>
+						<ul class="dropdown-menu">
+							<!-- The user image in the menu -->
+							<li class="user-header">
+								<img src="../../dist/img/avatar.png" class="img-circle" alt="User Image">
+
+								<p>
+									CRPER - Web前端开发
+									<small>啦啦啦德玛西亚</small>
+								</p>
+							</li>
+							<!-- Menu Body -->
+							<li class="user-body">
+								<div class="row">
+									<div class="col-xs-4 text-center">
+										<a href="#">关注</a>
+									</div>
+									<div class="col-xs-4 text-center">
+										<a href="#">前端</a>
+									</div>
+									<div class="col-xs-4 text-center">
+										<a href="#">朋友</a>
+									</div>
+								</div>
+								<!-- /.row -->
+							</li>
+							<!-- Menu Footer-->
+							<li class="user-footer">
+								<div class="pull-left">
+									<a href="#" class="btn btn-default btn-flat">个人信息</a>
+								</div>
+								<div class="pull-right">
+									<a href="#" class="btn btn-default btn-flat">退出</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<!-- Control Sidebar Toggle Button -->
+					<li>
+						<a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- Left side column. contains the logo and sidebar -->
+	<aside class="main-sidebar">
+		<!-- sidebar: style can be found in sidebar.less -->
+		<section class="sidebar">
+			<!-- Sidebar user panel (optional) -->
+			<div class="user-panel">
+				<div class="pull-left image">
+					<img src="../../dist/img/avatar.png" class="img-circle" alt="User Image">
+				</div>
+				<div class="pull-left info">
+					<p>CRPER</p>
+					<!-- Status -->
+					<a href="#"><i class="fa fa-circle text-success"></i>在线</a>
+				</div>
+			</div>
+			<!-- search form (Optional) -->
+			<form action="#" method="get" class="sidebar-form">
+				<div class="input-group">
+					<input type="text" name="q" class="form-control" placeholder="搜索...">
+                            <span class="input-group-btn">
+                                <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+	                                <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+				</div>
+			</form>
+			<!-- /.search form -->
+			<!-- Sidebar Menu -->
+			<ul class="sidebar-menu">
+				<li class="header">导航栏</li>
+				<!-- Optionally, you can add icons to the links -->
+				<li><a href="#"><i class="fa fa-link"></i> <span>一级菜单链接</span></a></li>
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-laptop"></i>
+						<span>组件</span>
+						<i class="fa fa-angle-left pull-right"></i>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="../../general.html"><i class="fa fa-circle-o"></i>通用样式</a></li>
+						<li><a href="../../icons.html"><i class="fa fa-circle-o"></i>图标库</a></li>
+						<li><a href="../../button.html"><i class="fa fa-circle-o"></i>按钮</a></li>
+						<li><a href="../../box.html"><i class="fa fa-circle-o"></i>盒子层</a></li>
+						<li><a href="../../table.html"><i class="fa fa-circle-o"></i>基本表格</a></li>
+						<li><a href="../../form.html"><i class="fa fa-circle-o"></i>基本表单</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-cubes"></i> <span>插件页面</span>
+						<i class="fa fa-angle-left pull-right"></i>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="pace.html"><i class="fa fa-circle-o"></i>PaceJS</a></li>
+						<li><a href="animationcss.html"><i class="fa fa-circle-o"></i>AnimateCSS</a></li>
+						<li>
+							<a href="#"><i class="fa fa-circle-o"></i>表格表单<i class="fa fa-angle-left pull-right"></i></a>
+							<ul class="treeview-menu">
+								<li><a href="../component_page/table_enhance.html"><i class="fa fa-circle-o"></i>表格+</a>
+								</li>
+								<li>
+									<a href="../component_page/form_enhance.html"><i class="fa fa-circle-o"></i>表单+</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-circle-o"></i>富文本<i class="fa fa-angle-left pull-right"></i></a>
+							<ul class="treeview-menu">
+								<li><a href="bootstrap-wysiwyg.html"><i class="fa fa-circle-o"></i>bootstrap-wysiwyg</a>
+								</li>
+								<li>
+									<a href="ckeditor-dev.html"><i class="fa fa-circle-o"></i>ckeditor</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-circle-o"></i>图表库<i class="fa fa-angle-left pull-right"></i></a>
+							<ul class="treeview-menu">
+								<li><a href="chartjs.html"><i class="fa fa-circle-o"></i>ChartJS</a></li>
+								<li>
+									<a href="#"><i class="fa fa-circle-o"></i>二级菜单</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-inbox"></i> <span>其他页面</span>
+						<i class="fa fa-angle-left pull-right"></i>
+					</a>
+					<ul class="treeview-menu">
+						<li>
+							<a href="#"><i class="fa fa-circle-o"></i>报错页面<i class="fa fa-angle-left pull-right"></i></a>
+							<ul class="treeview-menu">
+								<li><a href="../error/404.html"><i class="fa fa-circle-o"></i>404_fullpage</a>
+								</li>
+								<li>
+									<a href="../error/404_inner.html"><i class="fa fa-circle-o"></i>404_inner</a>
+								</li>
+								<li><a href="../error/500.html"><i class="fa fa-circle-o"></i>500_fullpage</a>
+								</li>
+								<li>
+									<a href="../error/500_inner.html"><i class="fa fa-circle-o"></i>500_inner</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-circle-o"></i>注册页面<i class="fa fa-angle-left pull-right"></i></a>
+							<ul class="treeview-menu">
+								<li>
+									<a href="../other_page/step_by_step_register.html"><i class="fa fa-circle-o"></i>三步注册</a>
+								</li>
+								<li>
+									<a href="../other_page/login_register.html"><i class="fa fa-circle-o"></i>全屏注册登录</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-circle-o"></i>找回密码</a>
+						</li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#">
+						<i class="fa fa-share"></i> <span>多级菜单</span>
+						<i class="fa fa-angle-left pull-right"></i>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="#"><i class="fa fa-circle-o"></i> 菜单</a></li>
+						<li>
+							<a href="#"><i class="fa fa-circle-o"></i>二级菜单<i class="fa fa-angle-left pull-right"></i></a>
+							<ul class="treeview-menu">
+								<li><a href="#"><i class="fa fa-circle-o"></i>三级菜单</a></li>
+								<li>
+									<a href="#"><i class="fa fa-circle-o"></i>三级菜单<i class="fa fa-angle-left pull-right"></i></a>
+									<ul class="treeview-menu">
+										<li><a href="#"><i class="fa fa-circle-o"></i>三级菜单</a></li>
+										<li><a href="#"><i class="fa fa-circle-o"></i>三级菜单</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<!-- /.sidebar-menu -->
+		</section>
+		<!-- /.sidebar -->
+	</aside>
+	<!-- Content Wrapper. Contains page content -->
+	<div class="content-wrapper">
+		<!-- Content Header (Page header) -->
+		<section class="content-header">
+			<h1>
+				Animate.css
+				<small>Just-add-water CSS animations</small>
+			</h1>
+			<ol class="breadcrumb">
+				<li><a href="#"><i class="fa fa-dashboard"></i>首页</a></li>
+				<li class="active">这里</li>
+			</ol>
+		</section>
+		<!-- Main content -->
+		<section class="content">
+			<div class="row">
+				<div class="col-sm-5 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+					<header class="site__header island">
+						<div class="wrap">
+							<span id="animationSandbox" style="display: block;"><h1 class="site__title mega">
+								Animate.css</h1></span>
+							<span class="beta subhead">Just-add-water CSS animations</span>
+						</div>
+					</header>
+					<!-- /.site__header -->
+					<main class="site__content island" role="content">
+						<div class="wrap">
+							<form>
+								<select class="input input--dropdown js--animations">
+									<optgroup label="Attention Seekers">
+										<option value="bounce">bounce</option>
+										<option value="flash">flash</option>
+										<option value="pulse">pulse</option>
+										<option value="rubberBand">rubberBand</option>
+										<option value="shake">shake</option>
+										<option value="swing">swing</option>
+										<option value="tada">tada</option>
+										<option value="wobble">wobble</option>
+										<option value="jello">jello</option>
+									</optgroup>
+									<optgroup label="Bouncing Entrances">
+										<option value="bounceIn">bounceIn</option>
+										<option value="bounceInDown">bounceInDown</option>
+										<option value="bounceInLeft">bounceInLeft</option>
+										<option value="bounceInRight">bounceInRight</option>
+										<option value="bounceInUp">bounceInUp</option>
+									</optgroup>
+									<optgroup label="Bouncing Exits">
+										<option value="bounceOut">bounceOut</option>
+										<option value="bounceOutDown">bounceOutDown</option>
+										<option value="bounceOutLeft">bounceOutLeft</option>
+										<option value="bounceOutRight">bounceOutRight</option>
+										<option value="bounceOutUp">bounceOutUp</option>
+									</optgroup>
+									<optgroup label="Fading Entrances">
+										<option value="fadeIn">fadeIn</option>
+										<option value="fadeInDown">fadeInDown</option>
+										<option value="fadeInDownBig">fadeInDownBig</option>
+										<option value="fadeInLeft">fadeInLeft</option>
+										<option value="fadeInLeftBig">fadeInLeftBig</option>
+										<option value="fadeInRight">fadeInRight</option>
+										<option value="fadeInRightBig">fadeInRightBig</option>
+										<option value="fadeInUp">fadeInUp</option>
+										<option value="fadeInUpBig">fadeInUpBig</option>
+									</optgroup>
+									<optgroup label="Fading Exits">
+										<option value="fadeOut">fadeOut</option>
+										<option value="fadeOutDown">fadeOutDown</option>
+										<option value="fadeOutDownBig">fadeOutDownBig</option>
+										<option value="fadeOutLeft">fadeOutLeft</option>
+										<option value="fadeOutLeftBig">fadeOutLeftBig</option>
+										<option value="fadeOutRight">fadeOutRight</option>
+										<option value="fadeOutRightBig">fadeOutRightBig</option>
+										<option value="fadeOutUp">fadeOutUp</option>
+										<option value="fadeOutUpBig">fadeOutUpBig</option>
+									</optgroup>
+									<optgroup label="Flippers">
+										<option value="flip">flip</option>
+										<option value="flipInX">flipInX</option>
+										<option value="flipInY">flipInY</option>
+										<option value="flipOutX">flipOutX</option>
+										<option value="flipOutY">flipOutY</option>
+									</optgroup>
+									<optgroup label="Lightspeed">
+										<option value="lightSpeedIn">lightSpeedIn</option>
+										<option value="lightSpeedOut">lightSpeedOut</option>
+									</optgroup>
+									<optgroup label="Rotating Entrances">
+										<option value="rotateIn">rotateIn</option>
+										<option value="rotateInDownLeft">rotateInDownLeft</option>
+										<option value="rotateInDownRight">rotateInDownRight</option>
+										<option value="rotateInUpLeft">rotateInUpLeft</option>
+										<option value="rotateInUpRight">rotateInUpRight</option>
+									</optgroup>
+									<optgroup label="Rotating Exits">
+										<option value="rotateOut">rotateOut</option>
+										<option value="rotateOutDownLeft">rotateOutDownLeft</option>
+										<option value="rotateOutDownRight">rotateOutDownRight</option>
+										<option value="rotateOutUpLeft">rotateOutUpLeft</option>
+										<option value="rotateOutUpRight">rotateOutUpRight</option>
+									</optgroup>
+									<optgroup label="Sliding Entrances">
+										<option value="slideInUp">slideInUp</option>
+										<option value="slideInDown">slideInDown</option>
+										<option value="slideInLeft">slideInLeft</option>
+										<option value="slideInRight">slideInRight</option>
+									</optgroup>
+									<optgroup label="Sliding Exits">
+										<option value="slideOutUp">slideOutUp</option>
+										<option value="slideOutDown">slideOutDown</option>
+										<option value="slideOutLeft">slideOutLeft</option>
+										<option value="slideOutRight">slideOutRight</option>
+									</optgroup>
+									<optgroup label="Zoom Entrances">
+										<option value="zoomIn">zoomIn</option>
+										<option value="zoomInDown">zoomInDown</option>
+										<option value="zoomInLeft">zoomInLeft</option>
+										<option value="zoomInRight">zoomInRight</option>
+										<option value="zoomInUp">zoomInUp</option>
+									</optgroup>
+									<optgroup label="Zoom Exits">
+										<option value="zoomOut">zoomOut</option>
+										<option value="zoomOutDown">zoomOutDown</option>
+										<option value="zoomOutLeft">zoomOutLeft</option>
+										<option value="zoomOutRight">zoomOutRight</option>
+										<option value="zoomOutUp">zoomOutUp</option>
+									</optgroup>
+									<optgroup label="Specials">
+										<option value="hinge">hinge</option>
+										<option value="rollIn">rollIn</option>
+										<option value="rollOut">rollOut</option>
+									</optgroup>
+								</select>
+								<button class="butt js--triggerAnimation">Animate it</button>
+							</form>
+							<hr>
+							<p class="meta">
+								<a href="https://raw.github.com/daneden/animate.css/master/animate.css" download="animate.css">下载
+									Animate.css</a> or <a href="https://github.com/daneden/animate.css">在github上查看</a>
+							</p>
+
+							<p>
+								<small>Another thing from <a href="//daneden.me">Daniel Eden</a>.</small>
+							</p>
+						</div>
+					</main>
+					<!-- /.site__content -->
+				</div>
+				<div class="col-sm-6  col-xs-6">
+					<h3>简单用法:加载,调用</h3>
+
+					<p>
+						<code>&lt;link rel="stylesheet" href="animate.min.css"&gt;</code><br>
+						直接给标签添加相对应的<code>class</code>就能看到效果
+					</p>
+
+					<p>
+						推荐使用<code>jQuery</code>或者<code>javascript</code>来控制,而不是写死在里面
+					</p>
+				</div>
+			</div>
+			<!-- Your Page Content Here -->
+
+		</section>
+		<!-- /.content -->
+	</div>
+	<!-- /.content-wrapper -->
+	<!-- Main Footer -->
+	<footer class="main-footer">
+		<!-- To the right -->
+		<div class="pull-right hidden-xs">
+			S-NEXT
+		</div>
+		<!-- Default to the left -->
+		<strong>Copyright &copy; 2015 <a href="#">S-NEXT</a>.</strong> All rights reserved.
+	</footer>
+	<!-- Control Sidebar -->
+	<aside class="control-sidebar control-sidebar-dark">
+		<!-- Create the tabs -->
+		<ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+			<li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+			<li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<!-- Home tab content -->
+			<div class="tab-pane active" id="control-sidebar-home-tab">
+				<h3 class="control-sidebar-heading">最近活动</h3>
+				<ul class="control-sidebar-menu">
+					<li>
+						<a href="javascript:;">
+							<i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+							<div class="menu-info">
+								<h4 class="control-sidebar-subheading">圣诞节活动</h4>
+
+								<p>2015-12-25</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<!-- /.control-sidebar-menu -->
+				<h3 class="control-sidebar-heading">任务进度</h3>
+				<ul class="control-sidebar-menu">
+					<li>
+						<a href="javascript:;">
+							<h4 class="control-sidebar-subheading">
+								自定义模版设计
+								<span class="label label-danger pull-right">70%</span>
+							</h4>
+
+							<div class="progress progress-xxs">
+								<div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<!-- /.control-sidebar-menu -->
+			</div>
+			<!-- /.tab-pane -->
+			<!-- Stats tab content -->
+			<div class="tab-pane" id="control-sidebar-stats-tab">状态面板</div>
+			<!-- /.tab-pane -->
+			<!-- Settings tab content -->
+			<div class="tab-pane" id="control-sidebar-settings-tab">
+				<form method="post">
+					<h3 class="control-sidebar-heading">常规设置</h3>
+
+					<div class="form-group">
+						<label class="control-sidebar-subheading">
+							关闭消息通知
+							<input type="checkbox" class="pull-right" checked>
+						</label>
+
+						<p>
+							勾选了将停止所有信息的接受(紧急通知不在内)
+						</p>
+					</div>
+					<!-- /.form-group -->
+				</form>
+			</div>
+			<!-- /.tab-pane -->
+		</div>
+	</aside>
+	<!-- /.control-sidebar -->
+	<div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+<!-- REQUIRED JS SCRIPTS -->
+<!-- jQuery 2.1.4 -->
+<script src="../../dist/js/jquery-2.1.4.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/s-next.js"></script>
+<!--animatecss apply-->
+<script>
+	function testAnim(x) {
+		$('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+			$(this).removeClass();
+		});
+	}
+	;
+	$(document).ready(function () {
+		$('.js--triggerAnimation').click(function (e) {
+			e.preventDefault();
+			var anim = $('.js--animations').val();
+			testAnim(anim);
+		});
+		$('.js--animations').change(function () {
+			var anim = $(this).val();
+			testAnim(anim);
+		});
+	});
+</script>
+</body>
+</html>

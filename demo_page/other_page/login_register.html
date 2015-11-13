@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>登录与注册</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="../../dist/img/favicon.ico">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../dist/css/font-awesome.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/s-next.css">
+
+    <!--IE9及以下提醒升级浏览器或者更换浏览器-->
+    <!--[if (lt IE 9) | (IE 9)]><p class="alert alert-danger">您的浏览器需要更新。该浏览器有诸多安全漏洞，无法显示本网站的所有功能。
+    我们强烈建议您<a href="http://browsehappy.com">升级浏览器</a>，
+    或<a href="http://www.google.com/chromeframe">安装 Google Chrome 浏览器内嵌框架</a>。</p><![endif]-->
+
+    <!--让IE9兼容响应式!!!-->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .overlay {
+            min-height: 100% !important;
+            min-width: 100% !important;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: rgba(59, 65, 75, 0.98);
+        }
+
+        .form-wrapper {
+            width: 400px;
+            margin: 0 auto;
+            color: #86939e;
+            min-height: 300px;
+            margin-top: 20%;
+        }
+
+        .form-wrapper input, .btn-extra {
+            background-color: transparent;
+            border: 1px solid #86939e;
+            border-radius: 3px;
+            line-height: 1.2;
+            color: #e6e6e6;
+            padding: 12px 10px;
+            outline: none;
+        }
+
+        .btn-extra {
+            border-radius: 5px !important;
+        }
+
+        @media screen and (max-width: 768px) {
+            .signup {
+                display: none;
+            }
+
+            .form-wrapper {
+                margin-top: 40%;
+            }
+        }
+    </style>
+    <!--[if  IE ]>
+    <style>
+        input[type='checkbox'],
+        input[type='radio'] {
+            border: transparent;
+        }
+
+        input[type='checkbox']:checked {
+            background-color: transparent;
+            border:none;
+
+        }
+
+    </style>
+    <![endif]-->
+</head>
+<body>
+<div class="overlay">
+    <div class="contianer">
+        <div class="col-md-6  col-sm-6 col-xs-12 ">
+            <div class="form-wrapper signin">
+                <h1>有账号!赶紧登陆吧!!</h1>
+
+                <form action="#">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="用户名/手机">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="密码">
+                    </div>
+                    <div class="form-group clearfix">
+                        <input type="checkbox" class="pull-left"><span class="pull-left">自动登录</span>
+                        <a href="#" class="pull-right">忘记密码?</a>
+                    </div>
+                    <div class="form-group ">
+                        <button type="submit" class="btn btn-flat btn-sm  btn-extra">登录</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+	        <div class="form-wrapper signup">
+                <h1>没账号?<br>立即注册</h1>
+
+                <form action="#">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="用户名">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="邮箱">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="密码">
+                        <input type="password" class="form-control" placeholder="确认密码">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-flat btn-sm  btn-extra">注册</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- REQUIRED JS SCRIPTS -->
+<!-- jQuery 2.1.4 -->
+<script src="../../dist/js/jquery-2.1.4.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/s-next.js"></script>
+
+
+</body>
+</html>
