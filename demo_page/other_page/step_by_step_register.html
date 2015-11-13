@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>分步注册</title>
+	<!-- Tell the browser to be responsive to screen width -->
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<!--favicon-->
+	<link rel="shortcut icon" type="image/x-icon" href="../../dist/img/favicon.ico">
+	<!-- Bootstrap 3.3.5 -->
+	<link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="../../dist/css/font-awesome.min.css">
+	<!-- Theme style -->
+	<link rel="stylesheet" href="../../dist/css/s-next.css">
+
+
+	<!--让IE9兼容响应式!!!-->
+	<!--[if lt IE 9]>
+	<script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<style>
+		body {
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7abcff+0,60abf8+44,4096ee+100;Blue+3D+%2314 */
+			background: #7abcff; /* Old browsers */
+			background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7abcff', endColorstr='#4096ee', GradientType=0); /* IE6-9 */
+			}
+
+		/***** Top content *****/
+		.top-content .text h1 { color: #fff; }
+
+		.top-content .description p { opacity: 0.8; }
+
+		.top-content .description a {
+			color: #fff;
+			}
+
+		.top-content .description a:hover,
+		.top-content .description a:focus { border-bottom: 1px dotted #fff; }
+
+		.form-box {
+			padding-top: 40px;
+			}
+
+		.form-top {
+			overflow: hidden;
+			padding: 0 25px 15px 25px;
+			background: #fff;
+			-moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
+			text-align: left;
+			}
+
+		.form-top-left {
+			float: left;
+			width: 75%;
+			padding-top: 25px;
+			}
+
+		.form-top-left h3 { margin-top: 0; }
+
+		.form-top-right {
+			float: left;
+			width: 25%;
+			padding-top: 5px;
+			font-size: 66px;
+			color: #ddd;
+			line-height: 100px;
+			text-align: right;
+			}
+
+		.form-bottom {
+			padding: 25px 25px 30px 25px;
+			background: #eee;
+			-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
+			text-align: left;
+			}
+
+		form .form-bottom textarea {
+			height: 100px;
+			}
+
+		form .form-bottom button.btn {
+			min-width: 105px;
+			}
+
+		form .form-bottom .input-error {
+			border-color: #19b9e7;
+			}
+
+		form.registration-form fieldset {
+			display: none;
+			}
+	</style>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-3 form-box">
+
+			<form role="form" action="" method="post" class="registration-form">
+
+				<fieldset>
+					<div class="form-top">
+						<div class="form-top-left">
+							<h3>Step 1 / 3</h3>
+
+							<p>告诉我们,您的基本信息(信息不为空):</p>
+						</div>
+						<div class="form-top-right">
+							<i class="fa fa-user"></i>
+						</div>
+					</div>
+					<div class="form-bottom">
+						<div class="form-group">
+							<label class="sr-only" for="form-first-name">姓</label>
+							<input type="text" name="form-first-name" placeholder="姓" class="form-first-name form-control input-error" id="form-first-name">
+						</div>
+						<div class="form-group">
+							<label class="sr-only" for="form-last-name">名</label>
+							<input type="text" name="form-last-name" placeholder="名" class="form-last-name form-control input-error" id="form-last-name">
+						</div>
+						<div class="form-group">
+							<label class="sr-only" for="form-about-yourself">关于你自己</label>
+							<textarea name="form-about-yourself" placeholder="关于你" class="form-about-yourself form-control input-error" id="form-about-yourself"></textarea>
+						</div>
+						<button type="button" class="btn btn-next">下一步</button>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<div class="form-top">
+						<div class="form-top-left">
+							<h3>Step 2 / 3</h3>
+
+							<p>设置您的帐号:</p>
+						</div>
+						<div class="form-top-right">
+							<i class="fa fa-key"></i>
+						</div>
+					</div>
+					<div class="form-bottom">
+						<div class="form-group">
+							<label class="sr-only" for="form-email">Email</label>
+							<input type="text" name="form-email" placeholder="邮箱" class="form-email form-control" id="form-email">
+						</div>
+						<div class="form-group">
+							<label class="sr-only" for="form-password">Password</label>
+							<input type="password" name="form-password" placeholder="密码" class="form-password form-control" id="form-password">
+						</div>
+						<div class="form-group">
+							<label class="sr-only" for="form-repeat-password">Repeat password</label>
+							<input type="password" name="form-repeat-password" placeholder="重复密码" class="form-repeat-password form-control" id="form-repeat-password">
+						</div>
+						<button type="button" class="btn btn-previous">上一步</button>
+						<button type="button" class="btn btn-next">下一步</button>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<div class="form-top">
+						<div class="form-top-left">
+							<h3>Step 3 / 3</h3>
+
+							<p>社交媒体信息:</p>
+						</div>
+						<div class="form-top-right">
+							<i class="fa fa-twitter"></i>
+						</div>
+					</div>
+					<div class="form-bottom">
+						<div class="form-group">
+							<label class="sr-only" for="form-facebook">Facebook</label>
+							<input type="text" name="form-facebook" placeholder="Facebook..." class="form-facebook form-control" id="form-facebook">
+						</div>
+						<div class="form-group">
+							<label class="sr-only" for="form-twitter">Twitter</label>
+							<input type="text" name="form-twitter" placeholder="Twitter..." class="form-twitter form-control" id="form-twitter">
+						</div>
+						<div class="form-group">
+							<label class="sr-only" for="form-google-plus">Google plus</label>
+							<input type="text" name="form-google-plus" placeholder="谷歌+" class="form-google-plus form-control" id="form-google-plus">
+						</div>
+						<div class="form-group">
+							<label class="sr-only" for="form-google-plus">Sina Weibo</label>
+							<input type="text" name="form-google-plus" placeholder="新浪微博" class="form-google-plus form-control" id="form-google-plus">
+						</div>
+						<button type="button" class="btn btn-previous">上一步</button>
+						<button type="submit" class="btn">提交注册</button>
+					</div>
+				</fieldset>
+
+			</form>
+
+		</div>
+	</div>
+</div>
+<!-- ./wrapper -->
+<!-- REQUIRED JS SCRIPTS -->
+<!-- jQuery 2.1.4 -->
+<script src="../../dist/js/jquery-2.1.4.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!--velocity.js-->
+<script src="../../dist/js/plugins/velocity/velocity.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/s-next.js"></script>
+
+<script>
+	jQuery(document).ready(function () {
+		/*
+		 Form
+		 */
+		$('.registration-form fieldset:first-child').fadeIn('slow');
+
+		$('.registration-form input[type="text"], .registration-form input[type="password"], .registration-form textarea').on('focus', function () {
+			$(this).removeClass('input-error');
+		});
+
+		// next step
+		$('.registration-form .btn-next').on('click', function () {
+			var parent_fieldset = $(this).parents('fieldset');
+			var next_step = true;
+
+			parent_fieldset.find('input[type="text"], input[type="password"], textarea').each(function () {
+				if ($(this).val() == "") {
+					$(this).addClass('input-error');
+					next_step = false;
+				} else {
+					$(this).removeClass('input-error');
+				}
+			});
+
+			if (next_step) {
+				parent_fieldset.fadeOut(400, function () {
+					$(this).next().fadeIn();
+				});
+			}
+
+		});
+
+		// previous step
+		$('.registration-form .btn-previous').on('click', function () {
+			$(this).parents('fieldset').fadeOut(400, function () {
+				$(this).prev().fadeIn();
+			});
+		});
+
+		// submit
+		$('.registration-form').on('submit', function (e) {
+			$(this).find('input[type="text"], input[type="password"], textarea').each(function () {
+				if ($(this).val() == "") {
+					e.preventDefault();
+					$(this).addClass('input-error');
+				} else {
+					$(this).removeClass('input-error');
+				}
+			});
+
+		});
+	});
+</script>
+</body>
+</html>

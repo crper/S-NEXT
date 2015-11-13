@@ -1,0 +1,40 @@
+{
+  "name": "animateCSS",
+  "description": "A jQuery plugin to dynamically apply animate.css animations with callbacks",
+  "main": "dist/jquery.animatecss.js",
+  "version": "1.2.1",
+  "dependencies": {
+    "animate.css": "~3.1.1"
+  },
+  "devDependencies": {
+    "jquery": "~1.11.0"
+  },
+  "homepage": "https://github.com/craigmdennis/animateCSS",
+  "authors": [
+    "Craig Dennis <craigmdennis@gmail.com>"
+  ],
+  "keywords": [
+    "animation",
+    "css3",
+    "callbacks",
+    "plugin",
+    "jQuery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "1.2.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.2.1",
+    "commit": "939e42d0bc65b13ede1a0df6c3bc449de5d364ed"
+  },
+  "_source": "git://github.com/craigmdennis/animateCSS.git",
+  "_target": "~1.2.1",
+  "_originalSource": "animateCSS"
+}

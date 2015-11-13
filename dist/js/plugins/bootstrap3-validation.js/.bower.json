@@ -1,0 +1,14 @@
+{
+  "name": "bootstrap3-validation.js",
+  "homepage": "https://github.com/mrlong/bootstrap3-validation.js",
+  "_release": "b00f17109f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "b00f17109f7bc7a34dce5ff2f99d745e7ea8e9a1"
+  },
+  "_source": "git@github.com:mrlong/bootstrap3-validation.js.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:mrlong/bootstrap3-validation.js.git",
+  "_direct": true
+}
