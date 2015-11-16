@@ -1,6 +1,9 @@
 #S-NEXT
 一款基于bootstrap的响应式后台主题,修改和更新可以查看'CHANGELOG.md`
 
+##注意:
+请到gh-pages分支去下载模版
+
 ###贯穿整个模版的五个必备库
 - FontAwesome v4.4.0 -- 丰富的图标
 - Bootstrap v3.3.5 -- 响应式框架

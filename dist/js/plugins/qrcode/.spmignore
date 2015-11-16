@@ -1,9 +1,0 @@
-dist/
-node_modules/
-spm_modules/
-_site/
-examples/
-tests/
-.gitignore
-.git
-.DS_Store
