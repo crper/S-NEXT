@@ -4,1179 +4,1125 @@ This is a starter template page. Use this page to start your new project from
 scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>盒子模型</title>
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!--favicon-->
-    <link rel="shortcut icon" type="image/x-icon" href="dist/img/favicon.ico">
-    <!-- Bootstrap 3.3.5 -->
-    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="dist/css/font-awesome.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/s-next.css">
-
-    <!--让IE9兼容响应式!!!-->
-    <!--[if lt IE 9]>
-    <script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
-    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-<body class="hold-transition sidebar-mini">
-<div class="wrapper">
-    <!-- Main Header -->
-    <header class="main-header">
-        <!-- Logo -->
-        <a href="index.html" class="logo">
-            <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini"><b>L</b>QH</span>
-            <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg">S-NEXT</span>
-        </a>
-        <!-- Header Navbar -->
-        <nav class="navbar navbar-static-top" role="navigation">
-            <!-- Sidebar toggle button-->
-            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-                <span class="sr-only">Toggle navigation</span>
-            </a>
-            <!-- Navbar Right Menu -->
-            <div class="navbar-custom-menu">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown messages-menu">
-                        <!-- Menu toggle button -->
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-envelope-o"></i>
-                            <span class="label label-success">4</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="header">您有<span>4</span>个消息</li>
-                            <li>
-                                <!-- inner menu: contains the messages -->
-                                <ul class="menu">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>盒子模型</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!--favicon-->
+        <link rel="shortcut icon" type="image/x-icon" href="dist/img/favicon.ico">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="dist/css/s-next.css">
+        <!--让IE9兼容响应式!!!-->
+        <!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+        <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="hold-transition sidebar-mini">
+        <div class="wrapper">
+            <!-- Main Header -->
+            <header class="main-header">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>L</b>QH</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg">S-NEXT</span>
+                </a>
+                <!-- Header Navbar -->
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    </a>
+                    <!-- Navbar Right Menu -->
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown messages-menu">
+                                <!-- Menu toggle button -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-envelope-o"></i>
+                                <span class="label label-success">4</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="header">您有<span>4</span>个消息</li>
                                     <li>
-                                        <!-- start message -->
-                                        <a href="#">
-                                            <div class="pull-left">
-                                                <!-- User Image -->
-                                                <img src="dist/img/avatar.png" class="img-circle" alt="User Image">
-                                            </div>
-                                            <!-- Message title and timestamp -->
-                                            <h4>
+                                        <!-- inner menu: contains the messages -->
+                                        <ul class="menu">
+                                            <li>
+                                                <!-- start message -->
+                                                <a href="#">
+                                                <div class="pull-left">
+                                                    <!-- User Image -->
+                                                    <img src="dist/img/avatar.png" class="img-circle" alt="User Image">
+                                                </div>
+                                                <!-- Message title and timestamp -->
+                                                <h4>
                                                 S-NEXT
                                                 <small><i class="fa fa-clock-o"></i> 5 分钟</small>
-                                            </h4>
-                                            <!-- The message -->
-                                            <p>啦啦啦德玛西亚</p>
-                                        </a>
+                                                </h4>
+                                                <!-- The message -->
+                                                <p>啦啦啦德玛西亚</p>
+                                                </a>
+                                            </li>
+                                            <!-- end message -->
+                                        </ul>
+                                        <!-- /.menu -->
                                     </li>
-                                    <!-- end message -->
-                                </ul>
-                                <!-- /.menu -->
-                            </li>
-                            <li class="footer"><a href="#">查看所有消息</a></li>
-                        </ul>
-                    </li>
-                    <!-- /.messages-menu -->
-                    <!-- Notifications Menu -->
-                    <li class="dropdown notifications-menu">
-                        <!-- Menu toggle button -->
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-commenting-o"></i>
-                            <span class="label label-warning">10</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="header">您有<span>10</span>个消息</li>
-                            <li>
-                                <!-- Inner Menu: contains the notifications -->
-                                <ul class="menu">
-                                    <li>
-                                        <!-- start notification -->
-                                        <a href="#">
-                                            <i class="fa fa-users text-aqua"></i><span>CRPER</span>
-                                            <small class="pull-right"><span>5</span>分钟加入</small>
-                                        </a>
-                                    </li>
-                                    <!-- end notification -->
+                                    <li class="footer"><a href="#">查看所有消息</a></li>
                                 </ul>
                             </li>
-                            <li class="footer"><a href="#">查看所有</a></li>
-                        </ul>
-                    </li>
-                    <!-- Tasks Menu -->
-                    <li class="dropdown tasks-menu">
-                        <!-- Menu Toggle Button -->
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-tasks"></i>
-                            <span class="label label-danger">9</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="header">您有<span>9</span>个任务</li>
-                            <li>
-                                <!-- Inner menu: contains the tasks -->
-                                <ul class="menu">
+                            <!-- /.messages-menu -->
+                            <!-- Notifications Menu -->
+                            <li class="dropdown notifications-menu">
+                                <!-- Menu toggle button -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-commenting-o"></i>
+                                <span class="label label-warning">10</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="header">您有<span>10</span>个消息</li>
                                     <li>
-                                        <!-- Task item -->
-                                        <a href="#">
-                                            <!-- Task title and progress text -->
-                                            <h3>
+                                        <!-- Inner Menu: contains the notifications -->
+                                        <ul class="menu">
+                                            <li>
+                                                <!-- start notification -->
+                                                <a href="#">
+                                                <i class="fa fa-users text-aqua"></i><span>CRPER</span>
+                                                <small class="pull-right"><span>5</span>分钟加入</small>
+                                                </a>
+                                            </li>
+                                            <!-- end notification -->
+                                        </ul>
+                                    </li>
+                                    <li class="footer"><a href="#">查看所有</a></li>
+                                </ul>
+                            </li>
+                            <!-- Tasks Menu -->
+                            <li class="dropdown tasks-menu">
+                                <!-- Menu Toggle Button -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-tasks"></i>
+                                <span class="label label-danger">9</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="header">您有<span>9</span>个任务</li>
+                                    <li>
+                                        <!-- Inner menu: contains the tasks -->
+                                        <ul class="menu">
+                                            <li>
+                                                <!-- Task item -->
+                                                <a href="#">
+                                                <!-- Task title and progress text -->
+                                                <h3>
                                                 修复一些BUG
                                                 <small class="pull-right">80%</small>
-                                            </h3>
-                                            <!-- The progress bar -->
-                                            <div class="progress xs">
-                                                <!-- Change the css width attribute to simulate progress -->
-                                                <div class="progress-bar progress-bar-aqua" style="width: 20%"
-                                                     role="progressbar" aria-valuenow="20" aria-valuemin="0"
-                                                     aria-valuemax="100">
-                                                    <span class="sr-only">完成<span>20%</span></span>
+                                                </h3>
+                                                <!-- The progress bar -->
+                                                <div class="progress xs">
+                                                    <!-- Change the css width attribute to simulate progress -->
+                                                    <div class="progress-bar progress-bar-aqua" style="width: 20%"
+                                                        role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                        aria-valuemax="100">
+                                                        <span class="sr-only">完成<span>20%</span></span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
+                                                </a>
+                                            </li>
+                                            <!-- end task item -->
+                                        </ul>
                                     </li>
-                                    <!-- end task item -->
+                                    <li class="footer">
+                                        <a href="#">View all tasks</a>
+                                    </li>
                                 </ul>
                             </li>
-                            <li class="footer">
-                                <a href="#">View all tasks</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- User Account Menu -->
-                    <li class="dropdown user user-menu">
-                        <!-- Menu Toggle Button -->
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <!-- The user image in the navbar-->
-                            <img src="dist/img/avatar.png" class="user-image" alt="User Image">
-                            <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                            <span class="hidden-xs">CRPER</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <!-- The user image in the menu -->
-                            <li class="user-header">
-                                <img src="dist/img/avatar.png" class="img-circle" alt="User Image">
-
-                                <p>
-                                    CRPER - Web前端开发
-                                    <small>啦啦啦德玛西亚</small>
-                                </p>
-                            </li>
-                            <!-- Menu Body -->
-                            <li class="user-body">
-                                <ul class="nav nav-pills nav-justified">
-                                    <li><a href="#">Followers</a></li>
-                                    <li><a href="#">Sales</a></li>
-                                    <li><a href="#">Friends</a></li>
+                            <!-- User Account Menu -->
+                            <li class="dropdown user user-menu">
+                                <!-- Menu Toggle Button -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <!-- The user image in the navbar-->
+                                <img src="dist/img/avatar.png" class="user-image" alt="User Image">
+                                <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                                <span class="hidden-xs">CRPER</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- The user image in the menu -->
+                                    <li class="user-header">
+                                        <img src="dist/img/avatar.png" class="img-circle" alt="User Image">
+                                        <p>
+                                        CRPER - Web前端开发
+                                        <small>啦啦啦德玛西亚</small>
+                                        </p>
+                                    </li>
+                                    <!-- Menu Body -->
+                                    <li class="user-body">
+                                        <ul class="nav nav-pills nav-justified">
+                                            <li><a href="#">Followers</a></li>
+                                            <li><a href="#">Sales</a></li>
+                                            <li><a href="#">Friends</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                            <a href="#" class="btn btn-default btn-flat">个人信息</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="#" class="btn btn-default btn-flat">退出</a>
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
-                            <!-- Menu Footer-->
-                            <li class="user-footer">
-                                <div class="pull-left">
-                                    <a href="#" class="btn btn-default btn-flat">个人信息</a>
-                                </div>
-                                <div class="pull-right">
-                                    <a href="#" class="btn btn-default btn-flat">退出</a>
-                                </div>
+                            <!-- Control Sidebar Toggle Button -->
+                            <li>
+                                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
                             </li>
                         </ul>
-                    </li>
-                    <!-- Control Sidebar Toggle Button -->
-                    <li>
-                        <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <!-- Left side column. contains the logo and sidebar -->
-    <aside class="main-sidebar">
-        <!-- sidebar: style can be found in sidebar.less -->
-        <section class="sidebar">
-            <!-- Sidebar user panel (optional) -->
-            <div class="user-panel">
-                <div class="pull-left image">
-                    <img src="dist/img/avatar.png" class="img-circle" alt="User Image">
-                </div>
-                <div class="pull-left info">
-                    <p>CRPER</p>
-                    <!-- Status -->
-                    <a href="#"><i class="fa fa-circle text-success"></i>在线</a>
-                </div>
-            </div>
-            <!-- search form (Optional) -->
-            <form action="#" method="get" class="sidebar-form">
-                <div class="input-group">
-                    <input type="text" name="q" class="form-control" placeholder="搜索...">
+                    </div>
+                </nav>
+            </header>
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar">
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    <!-- Sidebar user panel (optional) -->
+                    <div class="user-panel">
+                        <div class="pull-left image">
+                            <img src="dist/img/avatar.png" class="img-circle" alt="User Image">
+                        </div>
+                        <div class="pull-left info">
+                            <p>CRPER</p>
+                            <!-- Status -->
+                            <a href="#"><i class="fa fa-circle text-success"></i>在线</a>
+                        </div>
+                    </div>
+                    <!-- search form (Optional) -->
+                    <form action="#" method="get" class="sidebar-form">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="搜索...">
                             <span class="input-group-btn">
-                                <button type="submit" name="search" id="search-btn" class="btn btn-flat">
-                                    <i class="fa fa-search"></i>
-                                </button>
+                            <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                            <i class="fa fa-search"></i>
+                            </button>
                             </span>
-                </div>
-            </form>
-            <!-- /.search form -->
-            <!-- Sidebar Menu -->
-            <ul class="sidebar-menu">
-                <li class="header">导航栏</li>
-                <!-- Optionally, you can add icons to the links -->
-                <li><a href="#"><i class="fa fa-link"></i> <span>一级菜单链接</span></a></li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-laptop"></i>
-                        <span>组件</span>
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="general.html"><i class="fa fa-circle-o"></i>通用样式</a></li>
-                        <li><a href="icons.html"><i class="fa fa-circle-o"></i>图标库</a></li>
-                        <li><a href="button.html"><i class="fa fa-circle-o"></i>按钮</a></li>
-                        <li><a href="box.html"><i class="fa fa-circle-o"></i>盒子层</a></li>
-                        <li><a href="table.html"><i class="fa fa-circle-o"></i>基本表格</a></li>
-                        <li><a href="form.html"><i class="fa fa-circle-o"></i>基本表单</a></li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-cubes"></i> <span>插件页面</span>
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="demo_page/plugins_page/pace.html"><i class="fa fa-circle-o"></i>PaceJS</a></li>
-                        <li><a href="demo_page/plugins_page/animationcss.html"><i class="fa fa-circle-o"></i>AnimateCSS</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-circle-o"></i>表格表单<i
-                                    class="fa fa-angle-left pull-right"></i></a>
+                        </div>
+                    </form>
+                    <!-- /.search form -->
+                    <!-- Sidebar Menu -->
+                    <ul class="sidebar-menu">
+                        <li class="header">导航栏</li>
+                        <!-- Optionally, you can add icons to the links -->
+                        <li><a href="#"><i class="fa fa-link"></i> <span>一级菜单链接</span></a></li>
+                        <li class="treeview">
+                            <a href="#">
+                            <i class="fa fa-laptop"></i>
+                            <span>组件</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                            </a>
                             <ul class="treeview-menu">
-                                <li><a href="demo_page/component_page/table_enhance.html"><i class="fa fa-circle-o"></i>表格+</a>
-                                </li>
-                                <li>
-                                    <a href="demo_page/component_page/form_enhance.html"><i class="fa fa-circle-o"></i>表单+</a>
-                                </li>
+                                <li><a href="general.html"><i class="fa fa-circle-o"></i>通用样式</a></li>
+                                <li><a href="icons.html"><i class="fa fa-circle-o"></i>图标库</a></li>
+                                <li><a href="button.html"><i class="fa fa-circle-o"></i>按钮</a></li>
+                                <li><a href="box.html"><i class="fa fa-circle-o"></i>盒子层</a></li>
+                                <li><a href="table.html"><i class="fa fa-circle-o"></i>基本表格</a></li>
+                                <li><a href="form.html"><i class="fa fa-circle-o"></i>基本表单</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="#"><i class="fa fa-circle-o"></i>富文本<i class="fa fa-angle-left pull-right"></i></a>
+                        <li class="treeview">
+                            <a href="#">
+                            <i class="fa fa-cubes"></i> <span>插件页面</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                            </a>
                             <ul class="treeview-menu">
+                                <li><a href="demo_page/plugins_page/pace.html"><i class="fa fa-circle-o"></i>PaceJS</a></li>
+                                <li><a href="demo_page/plugins_page/animationcss.html"><i class="fa fa-circle-o"></i>AnimateCSS</a>
+                                </li>
                                 <li>
-                                    <a href="demo_page/plugins_page/bootstrap-wysiwyg.html"><i
+                                    <a href="#"><i class="fa fa-circle-o"></i>表格表单<i
+                                    class="fa fa-angle-left pull-right"></i></a>
+                                    <ul class="treeview-menu">
+                                        <li><a href="demo_page/component_page/table_enhance.html"><i class="fa fa-circle-o"></i>表格+</a>
+                                        </li>
+                                        <li>
+                                            <a href="demo_page/component_page/form_enhance.html"><i class="fa fa-circle-o"></i>表单+</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-circle-o"></i>富文本<i class="fa fa-angle-left pull-right"></i></a>
+                                    <ul class="treeview-menu">
+                                        <li>
+                                            <a href="demo_page/plugins_page/bootstrap-wysiwyg.html"><i
                                             class="fa fa-circle-o"></i>bootstrap-wysiwyg</a>
+                                        </li>
+                                        <li>
+                                            <a href="demo_page/plugins_page/ckeditor-dev.html"><i class="fa fa-circle-o"></i>ckeditor</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    <a href="demo_page/plugins_page/ckeditor-dev.html"><i class="fa fa-circle-o"></i>ckeditor</a>
+                                    <a href="#"><i class="fa fa-circle-o"></i>图表库<i class="fa fa-angle-left pull-right"></i></a>
+                                    <ul class="treeview-menu">
+                                        <li><a href="demo_page/plugins_page/chartjs.html"><i class="fa fa-circle-o"></i>ChartJS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-circle-o"></i>二级菜单</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="#"><i class="fa fa-circle-o"></i>图表库<i class="fa fa-angle-left pull-right"></i></a>
+                        <li class="treeview">
+                            <a href="#">
+                            <i class="fa fa-inbox"></i> <span>其他页面</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                            </a>
                             <ul class="treeview-menu">
-                                <li><a href="demo_page/plugins_page/chartjs.html"><i class="fa fa-circle-o"></i>ChartJS</a>
-                                </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-circle-o"></i>二级菜单</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-inbox"></i> <span>其他页面</span>
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li>
-                            <a href="#"><i class="fa fa-circle-o"></i>报错页面<i
+                                    <a href="#"><i class="fa fa-circle-o"></i>报错页面<i
                                     class="fa fa-angle-left pull-right"></i></a>
-                            <ul class="treeview-menu">
-                                <li><a href="demo_page/error/404.html"><i class="fa fa-circle-o"></i>404_fullpage</a>
+                                    <ul class="treeview-menu">
+                                        <li><a href="demo_page/error/404.html"><i class="fa fa-circle-o"></i>404_fullpage</a>
+                                        </li>
+                                        <li>
+                                            <a href="demo_page/error/404_inner.html"><i class="fa fa-circle-o"></i>404_inner</a>
+                                        </li>
+                                        <li><a href="demo_page/error/500.html"><i class="fa fa-circle-o"></i>500_fullpage</a>
+                                        </li>
+                                        <li>
+                                            <a href="demo_page/error/500_inner.html"><i class="fa fa-circle-o"></i>500_inner</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    <a href="demo_page/error/404_inner.html"><i class="fa fa-circle-o"></i>404_inner</a>
-                                </li>
-                                <li><a href="demo_page/error/500.html"><i class="fa fa-circle-o"></i>500_fullpage</a>
-                                </li>
-                                <li>
-                                    <a href="demo_page/error/500_inner.html"><i class="fa fa-circle-o"></i>500_inner</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-circle-o"></i>注册页面<i
+                                    <a href="#"><i class="fa fa-circle-o"></i>注册页面<i
                                     class="fa fa-angle-left pull-right"></i></a>
-                            <ul class="treeview-menu">
-                                <li>
-                                    <a href="demo_page/other_page/step_by_step_register.html"><i
+                                    <ul class="treeview-menu">
+                                        <li>
+                                            <a href="demo_page/other_page/step_by_step_register.html"><i
                                             class="fa fa-circle-o"></i>三步注册</a>
+                                        </li>
+                                        <li>
+                                            <a href="demo_page/other_page/login_register.html"><i class="fa fa-circle-o"></i>全屏注册登录</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    <a href="demo_page/other_page/login_register.html"><i class="fa fa-circle-o"></i>全屏注册登录</a>
+                                    <a href="#"><i class="fa fa-circle-o"></i>找回密码</a>
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="#"><i class="fa fa-circle-o"></i>找回密码</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-share"></i> <span>多级菜单</span>
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> 菜单</a></li>
-                        <li>
-                            <a href="#"><i class="fa fa-circle-o"></i>二级菜单<i
-                                    class="fa fa-angle-left pull-right"></i></a>
+                        <li class="treeview">
+                            <a href="#">
+                            <i class="fa fa-share"></i> <span>多级菜单</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                            </a>
                             <ul class="treeview-menu">
-                                <li><a href="#"><i class="fa fa-circle-o"></i>三级菜单</a></li>
+                                <li><a href="#"><i class="fa fa-circle-o"></i> 菜单</a></li>
                                 <li>
-                                    <a href="#"><i class="fa fa-circle-o"></i>三级菜单<i
-                                            class="fa fa-angle-left pull-right"></i></a>
+                                    <a href="#"><i class="fa fa-circle-o"></i>二级菜单<i
+                                    class="fa fa-angle-left pull-right"></i></a>
                                     <ul class="treeview-menu">
                                         <li><a href="#"><i class="fa fa-circle-o"></i>三级菜单</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o"></i>三级菜单</a></li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-circle-o"></i>三级菜单<i
+                                            class="fa fa-angle-left pull-right"></i></a>
+                                            <ul class="treeview-menu">
+                                                <li><a href="#"><i class="fa fa-circle-o"></i>三级菜单</a></li>
+                                                <li><a href="#"><i class="fa fa-circle-o"></i>三级菜单</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                     </ul>
-                </li>
-            </ul>
-            <!-- /.sidebar-menu -->
-        </section>
-        <!-- /.sidebar -->
-    </aside>
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <h1>
-                盒子
-                <small>包裹层</small>
-            </h1>
-            <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i>首页</a></li>
-                <li class="active">这里</li>
-            </ol>
-        </section>
-        <!-- Main content -->
-        <section class="content">
-            <!-- Your Page Content Here -->
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box">
-                        <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
-
-                        <div class="info-box-content">
-                            <span class="info-box-text">Messages</span>
-                            <span class="info-box-number">1,410</span>
-                        </div>
-                        <!-- /.info-box-content -->
-                    </div>
-                    <!-- /.info-box -->
-                </div>
-                <!-- /.col -->
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box">
-                        <span class="info-box-icon bg-green"><i class="fa fa-tasks"></i></span>
-
-                        <div class="info-box-content">
-                            <span class="info-box-text">Bookmarks</span>
-                            <span class="info-box-number">410</span>
-                        </div>
-                        <!-- /.info-box-content -->
-                    </div>
-                    <!-- /.info-box -->
-                </div>
-                <!-- /.col -->
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box">
-                        <span class="info-box-icon bg-yellow"><i class="fa fa-files-o"></i></span>
-
-                        <div class="info-box-content">
-                            <span class="info-box-text">Uploads</span>
-                            <span class="info-box-number">13,648</span>
-                        </div>
-                        <!-- /.info-box-content -->
-                    </div>
-                    <!-- /.info-box -->
-                </div>
-                <!-- /.col -->
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box">
-                        <span class="info-box-icon bg-red"><i class="fa fa-star-o"></i></span>
-
-                        <div class="info-box-content">
-                            <span class="info-box-text">Likes</span>
-                            <span class="info-box-number">93,139</span>
-                        </div>
-                        <!-- /.info-box-content -->
-                    </div>
-                    <!-- /.info-box -->
-                </div>
-                <!-- /.col -->
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-aqua">
-                        <span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
-
-                        <div class="info-box-content">
-                            <span class="info-box-text">Bookmarks</span>
-                            <span class="info-box-number">41,410</span>
-
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
-                            </div>
-                                <span class="progress-description">
-                                    70% Increase in 30 Days
-                                </span>
-                        </div>
-                        <!-- /.info-box-content -->
-                    </div>
-                    <!-- /.info-box -->
-                </div>
-                <!-- /.col -->
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-green">
-                        <span class="info-box-icon"><i class="fa fa-thumbs-o-up"></i></span>
-
-                        <div class="info-box-content">
-                            <span class="info-box-text">Likes</span>
-                            <span class="info-box-number">41,410</span>
-
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
-                            </div>
-                                <span class="progress-description">
-                                    70% Increase in 30 Days
-                                </span>
-                        </div>
-                        <!-- /.info-box-content -->
-                    </div>
-                    <!-- /.info-box -->
-                </div>
-                <!-- /.col -->
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-yellow">
-                        <span class="info-box-icon"><i class="fa fa-calendar"></i></span>
-
-                        <div class="info-box-content">
-                            <span class="info-box-text">Events</span>
-                            <span class="info-box-number">41,410</span>
-
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
-                            </div>
-                                <span class="progress-description">
-                                    70% Increase in 30 Days
-                                </span>
-                        </div>
-                        <!-- /.info-box-content -->
-                    </div>
-                    <!-- /.info-box -->
-                </div>
-                <!-- /.col -->
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-red">
-                        <span class="info-box-icon"><i class="fa fa-comments-o"></i></span>
-
-                        <div class="info-box-content">
-                            <span class="info-box-text">Comments</span>
-                            <span class="info-box-number">41,410</span>
-
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
-                            </div>
-                                <span class="progress-description">
-                                    70% Increase in 30 Days
-                                </span>
-                        </div>
-                        <!-- /.info-box-content -->
-                    </div>
-                    <!-- /.info-box -->
-                </div>
-                <!-- /.col -->
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-xs-6">
-                    <!-- small box -->
-                    <div class="small-box bg-aqua">
-                        <div class="inner">
-                            <h3>150</h3>
-
-                            <p>New Orders</p>
-                        </div>
-                        <div class="icon">
-                            <i class="fa fa-shopping-cart"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fa fa-arrow-circle-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- ./col -->
-                <div class="col-lg-3 col-xs-6">
-                    <!-- small box -->
-                    <div class="small-box bg-green">
-                        <div class="inner">
-                            <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-                            <p>Bounce Rate</p>
-                        </div>
-                        <div class="icon">
-                            <i class="fa fa-cogs"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fa fa-arrow-circle-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- ./col -->
-                <div class="col-lg-3 col-xs-6">
-                    <!-- small box -->
-                    <div class="small-box bg-yellow">
-                        <div class="inner">
-                            <h3>44</h3>
-
-                            <p>User Registrations</p>
-                        </div>
-                        <div class="icon">
-                            <i class="fa fa-user-plus"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fa fa-arrow-circle-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- ./col -->
-                <div class="col-lg-3 col-xs-6">
-                    <!-- small box -->
-                    <div class="small-box bg-red">
-                        <div class="inner">
-                            <h3>65</h3>
-
-                            <p>Unique Visitors</p>
-                        </div>
-                        <div class="icon">
-                            <i class="fa fa-user"></i>
-                        </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fa fa-arrow-circle-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- ./col -->
-            </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="box box-default collapsed-box">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Expandable</h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                    <i class="fa fa-plus"></i>
-                                </button>
-                            </div>
-                            <!-- /.box-tools -->
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body">
-                            The body of the box
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
-                </div>
-                <!-- /.col -->
-                <div class="col-md-3">
-                    <div class="box box-success">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Removable</h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="remove">
-                                    <i class="fa fa-times"></i></button>
-                            </div>
-                            <!-- /.box-tools -->
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body">
-                            The body of the box
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
-                </div>
-                <!-- /.col -->
-                <div class="col-md-3">
-                    <div class="box box-warning">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Collapsable</h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                            </div>
-                            <!-- /.box-tools -->
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body">
-                            The body of the box
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
-                </div>
-                <!-- /.col -->
-                <div class="col-md-3">
-                    <div class="box box-danger">
-                        <div class="box-header">
-                            <h3 class="box-title">Loading state</h3>
-                        </div>
-                        <div class="box-body">
-                            The body of the box
-                        </div>
-                        <!-- /.box-body -->
-                        <!-- Loading (remove the following to stop the loading)-->
-                        <div class="overlay">
-                            <i class="fa fa-refresh fa-spin"></i>
-                        </div>
-                        <!-- end loading -->
-                    </div>
-                    <!-- /.box -->
-                </div>
-                <!-- /.col -->
-            </div>
-            <!-- /.row -->
-
-            <!-- =========================================================== -->
-
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="box box-default collapsed-box box-solid">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Expandable</h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                    <i class="fa fa-plus"></i>
-                                </button>
-                            </div>
-                            <!-- /.box-tools -->
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body">
-                            The body of the box
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
-                </div>
-                <!-- /.col -->
-                <div class="col-md-3">
-                    <div class="box box-success box-solid">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Removable</h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="remove">
-                                    <i class="fa fa-times"></i></button>
-                            </div>
-                            <!-- /.box-tools -->
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body">
-                            The body of the box
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
-                </div>
-                <!-- /.col -->
-                <div class="col-md-3">
-                    <div class="box box-warning box-solid">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Collapsable</h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                            </div>
-                            <!-- /.box-tools -->
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body">
-                            The body of the box
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
-                </div>
-                <!-- /.col -->
-                <div class="col-md-3">
-                    <div class="box box-danger box-solid">
-                        <div class="box-header">
-                            <h3 class="box-title">Loading state</h3>
-                        </div>
-                        <div class="box-body">
-                            The body of the box
-                        </div>
-                        <!-- /.box-body -->
-                        <!-- Loading (remove the following to stop the loading)-->
-                        <div class="overlay">
-                            <i class="fa fa-refresh fa-spin"></i>
-                        </div>
-                        <!-- end loading -->
-                    </div>
-                    <!-- /.box -->
-                </div>
-                <!-- /.col -->
-            </div>
-            <!-- /.row -->
-
-            <!-- =========================================================== -->
-
-            <div class="row">
-                <div class="col-md-6">
-                    <!-- AREA CHART -->
-                    <div class="box box-primary">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">
-                                颜色:<code>.box-primary</code>
-                            </h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove">
-                                    <i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
-                        <div class="box-body   ">
-                            <p>若是内部使用了<code>.row</code>布局,请移除<code>. </code></p>
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
-                    <!-- box-danger -->
-                    <div class="box box-danger">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">颜色:<code>.box-danger</code></h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove">
-                                    <i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
-                        <div class="box-body   ">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
-                </div>
-                <!-- /.col (LEFT) -->
-                <div class="col-md-6">
-                    <!-- box-info -->
-                    <div class="box box-info">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">颜色:<code>.box-info</code></h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove">
-                                    <i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
-                        <div class="box-body   ">
-                            Lorem ipsum dolor sit , consectetur adipisicing , sed do eiusmod tempor incididunt ut labore
-                            et dolore magna . Ut enim ad minim , quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo . Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla . Excepteur sint occaecat cupidatat non , sunt in culpa qui
-                            officia deserunt mollit anim id est . { }
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
-                    <!-- box-success -->
-                    <div class="box box-success">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">颜色:<code>.box-success</code></h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove">
-                                    <i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
-                        <div class="box-body   ">
-                            Lorem ipsum dolor sit , consectetur adipisicing , sed do eiusmod tempor incididunt ut labore
-                            et dolore magna . Ut enim ad minim , quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo . Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla . Excepteur sint occaecat cupidatat non , sunt in culpa qui
-                            officia deserunt mollit anim id est . { }
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
-                </div>
-                <!-- /.col (RIGHT) -->
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="box box-widget">
-                        <div class="box-header with-border">
-                            <div class="user-block">
-                                <img class="img-circle" src="dist/img/avatar.png" alt="User Image">
-                                <span class="username"><a href="#">标题</a></span>
-                                <span class="description">副标题</span>
-                            </div>
-                            <!-- /.user-block -->
-                            <div class="box-tools">
-                                <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title=""
-                                        data-original-title="Mark as read">
-                                    <i class="fa fa-circle-o"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove">
-                                    <i class="fa fa-times"></i></button>
-                            </div>
-                            <!-- /.box-tools -->
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body   ">
-                            Lorem ipsum dolor sit , consectetur adipisicing , sed do eiusmod tempor incididunt ut
-                            labore et dolore magna . Ut enim ad minim , quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo . Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla . Excepteur sint occaecat cupidatat non , sunt
-                            in culpa qui officia deserunt mollit anim id est . { }
-                        </div>
-                        <!-- /.box-body -->
-                        <div class="box-footer">
-                        </div>
-                        <!-- /.box-footer -->
-                    </div>
-                    <!-- /.box -->
-                </div>
-            </div>
-            <!-- /.col (RIGHT) -->
-            <div class="row">
-                <div class="col-md-6">
-                    <!-- Box Comment -->
-                    <div class="box box-widget">
-                        <div class="box-header with-border">
-                            <div class="user-block">
-                                <img class="img-circle" src="dist/img/avatar.png" alt="User Image">
-                                <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
-                                <span class="description">Shared publicly - 7:30 PM Today</span>
-                            </div>
-                            <!-- /.user-block -->
-                            <div class="box-tools">
-                                <button type="button" class="btn btn-box-tool" data-toggle="tooltip"
-                                        title="Mark as read">
-                                    <i class="fa fa-circle-o"></i></button>
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove">
-                                    <i class="fa fa-times"></i></button>
-                            </div>
-                            <!-- /.box-tools -->
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body">
-                            <img class="img-responsive pad" src="dist/img/avatar.png" alt="Photo">
-
-                            <p>I took this photo this morning. What do you guys think?</p>
-                            <button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> Share
-                            </button>
-                            <button type="button" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Like
-                            </button>
-                            <span class="pull-right text-muted">127 likes - 3 comments</span>
-                        </div>
-                        <!-- /.box-body -->
-                        <div class="box-footer box-comments">
-                            <div class="box-comment">
-                                <!-- User image -->
-                                <img class="img-circle img-sm" src="dist/img/avatar.png" alt="User Image">
-
-                                <div class="comment-text">
-                      <span class="username">
-                        Maria Gonzales
-                        <span class="text-muted pull-right">8:03 PM Today</span>
-                      </span><!-- /.username -->
-                                    It is a long established fact that a reader will be distracted
-                                    by the readable content of a page when looking at its layout.
+                    <!-- /.sidebar-menu -->
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                    盒子
+                    <small>包裹层</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-dashboard"></i>首页</a></li>
+                        <li class="active">这里</li>
+                    </ol>
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <!-- Your Page Content Here -->
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box">
+                                <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Messages</span>
+                                    <span class="info-box-number">1,410</span>
                                 </div>
-                                <!-- /.comment-text -->
+                                <!-- /.info-box-content -->
                             </div>
-                            <!-- /.box-comment -->
-                            <div class="box-comment">
-                                <!-- User image -->
-                                <img class="img-circle img-sm" src="dist/img/avatar.png" alt="User Image">
-
-                                <div class="comment-text">
-                      <span class="username">
-                        Luna Stark
-                        <span class="text-muted pull-right">8:03 PM Today</span>
-                      </span><!-- /.username -->
-                                    It is a long established fact that a reader will be distracted
-                                    by the readable content of a page when looking at its layout.
+                            <!-- /.info-box -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box">
+                                <span class="info-box-icon bg-green"><i class="fa fa-tasks"></i></span>
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Bookmarks</span>
+                                    <span class="info-box-number">410</span>
                                 </div>
-                                <!-- /.comment-text -->
+                                <!-- /.info-box-content -->
                             </div>
-                            <!-- /.box-comment -->
+                            <!-- /.info-box -->
                         </div>
-                        <!-- /.box-footer -->
-                        <div class="box-footer">
-                            <form action="#" method="post">
-                                <img class="img-responsive img-circle img-sm" src="dist/img/avatar.png" alt="Alt Text">
-                                <!-- .img-push is used to add margin to elements next to floating images -->
-                                <div class="img-push">
-                                    <input type="text" class="form-control input-sm"
-                                           placeholder="Press enter to post comment">
+                        <!-- /.col -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box">
+                                <span class="info-box-icon bg-yellow"><i class="fa fa-files-o"></i></span>
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Uploads</span>
+                                    <span class="info-box-number">13,648</span>
                                 </div>
-                            </form>
+                                <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
                         </div>
-                        <!-- /.box-footer -->
+                        <!-- /.col -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box">
+                                <span class="info-box-icon bg-red"><i class="fa fa-star-o"></i></span>
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Likes</span>
+                                    <span class="info-box-number">93,139</span>
+                                </div>
+                                <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
+                        </div>
+                        <!-- /.col -->
                     </div>
-                    <!-- /.box -->
-                </div>
-                <!-- /.col -->
-                <div class="col-md-6">
-                    <!-- Box Comment -->
-                    <div class="box box-widget">
-                        <div class="box-header with-border">
-                            <div class="user-block">
-                                <img class="img-circle" src="dist/img/avatar.png" alt="User Image">
-                                <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
-                                <span class="description">Shared publicly - 7:30 PM Today</span>
-                            </div>
-                            <!-- /.user-block -->
-                            <div class="box-tools">
-                                <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title=""
-                                        data-original-title="Mark as read">
-                                    <i class="fa fa-circle-o"></i></button>
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove">
-                                    <i class="fa fa-times"></i></button>
-                            </div>
-                            <!-- /.box-tools -->
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body">
-                            <!-- post text -->
-                            <p>Far far away, behind the word mountains, far from the
-                                countries Vokalia and Consonantia, there live the blind
-                                texts. Separated they live in Bookmarksgrove right at</p>
-
-                            <p>the coast of the Semantics, a large language ocean.
-                                A small river named Duden flows by their place and supplies
-                                it with the necessary regelialia. It is a paradisematic
-                                country, in which roasted parts of sentences fly into
-                                your mouth.</p>
-
-                            <!-- Attachment -->
-                            <div class="attachment-block clearfix">
-                                <img class="attachment-img" src="dist/img/photo1.png" alt="Attachment Image">
-
-                                <div class="attachment-pushed">
-                                    <h4 class="attachment-heading"><a href="#">Lorem ipsum text
-                                        generator</a></h4>
-
-                                    <div class="attachment-text">
-                                        Description about the attachment can be placed here.
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry...
-                                        <a href="#">more</a>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box bg-aqua">
+                                <span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Bookmarks</span>
+                                    <span class="info-box-number">41,410</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 70%"></div>
                                     </div>
-                                    <!-- /.attachment-text -->
+                                    <span class="progress-description">
+                                    70% Increase in 30 Days
+                                    </span>
                                 </div>
-                                <!-- /.attachment-pushed -->
+                                <!-- /.info-box-content -->
                             </div>
-                            <!-- /.attachment-block -->
-
-                            <!-- Social sharing buttons -->
-                            <button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> Share
-                            </button>
-                            <button type="button" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Like
-                            </button>
-                            <span class="pull-right text-muted">45 likes - 2 comments</span>
+                            <!-- /.info-box -->
                         </div>
-                        <!-- /.box-body -->
-                        <div class="box-footer box-comments">
-                            <div class="box-comment">
-                                <!-- User image -->
-                                <img class="img-circle img-sm" src="dist/img/avatar.png" alt="User Image">
-
-                                <div class="comment-text">
-                      <span class="username">
-                        Maria Gonzales
-                        <span class="text-muted pull-right">8:03 PM Today</span>
-                      </span><!-- /.username -->
-                                    It is a long established fact that a reader will be distracted
-                                    by the readable content of a page when looking at its layout.
+                        <!-- /.col -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box bg-green">
+                                <span class="info-box-icon"><i class="fa fa-thumbs-o-up"></i></span>
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Likes</span>
+                                    <span class="info-box-number">41,410</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 70%"></div>
+                                    </div>
+                                    <span class="progress-description">
+                                    70% Increase in 30 Days
+                                    </span>
                                 </div>
-                                <!-- /.comment-text -->
+                                <!-- /.info-box-content -->
                             </div>
-                            <!-- /.box-comment -->
-                            <div class="box-comment">
-                                <!-- User image -->
-                                <img class="img-circle img-sm" src="dist/img/avatar.png" alt="User Image">
-
-                                <div class="comment-text">
-                      <span class="username">
-                        Nora Havisham
-                        <span class="text-muted pull-right">8:03 PM Today</span>
-                      </span><!-- /.username -->
-                                    The point of using Lorem Ipsum is that it has a more-or-less
-                                    normal distribution of letters, as opposed to using
-                                    'Content here, content here', making it look like readable English.
+                            <!-- /.info-box -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box bg-yellow">
+                                <span class="info-box-icon"><i class="fa fa-calendar"></i></span>
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Events</span>
+                                    <span class="info-box-number">41,410</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 70%"></div>
+                                    </div>
+                                    <span class="progress-description">
+                                    70% Increase in 30 Days
+                                    </span>
                                 </div>
-                                <!-- /.comment-text -->
+                                <!-- /.info-box-content -->
                             </div>
-                            <!-- /.box-comment -->
+                            <!-- /.info-box -->
                         </div>
-                        <!-- /.box-footer -->
-                        <div class="box-footer">
-                            <form action="#" method="post">
-                                <img class="img-responsive img-circle img-sm" src="dist/img/avatar.png" alt="Alt Text">
-                                <!-- .img-push is used to add margin to elements next to floating images -->
-                                <div class="img-push">
-                                    <input type="text" class="form-control input-sm"
-                                           placeholder="Press enter to post comment">
+                        <!-- /.col -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="info-box bg-red">
+                                <span class="info-box-icon"><i class="fa fa-comments-o"></i></span>
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Comments</span>
+                                    <span class="info-box-number">41,410</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 70%"></div>
+                                    </div>
+                                    <span class="progress-description">
+                                    70% Increase in 30 Days
+                                    </span>
                                 </div>
-                            </form>
+                                <!-- /.info-box-content -->
+                            </div>
+                            <!-- /.info-box -->
                         </div>
-                        <!-- /.box-footer -->
+                        <!-- /.col -->
                     </div>
-                    <!-- /.box -->
-                </div>
-                <!-- /.col -->
-            </div>
-        </section>
-        <!-- /.content -->
-    </div>
-    <!-- /.content-wrapper -->
-    <!-- Main Footer -->
-    <footer class="main-footer">
-        <!-- To the right -->
-        <div class="pull-right hidden-xs">
-            S-NEXT
-        </div>
-        <!-- Default to the left -->
-        <strong>Copyright &copy; 2015 <a href="#">S-NEXT</a>.</strong> All rights reserved.
-    </footer>
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-        <!-- Create the tabs -->
-        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-            <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-            <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
-        </ul>
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <!-- Home tab content -->
-            <div class="tab-pane active" id="control-sidebar-home-tab">
-                <h3 class="control-sidebar-heading">最近活动</h3>
-                <ul class="control-sidebar-menu">
-                    <li>
-                        <a href="javascript:;">
-                            <i class="menu-icon fa fa-birthday-cake bg-red"></i>
-
-                            <div class="menu-info">
-                                <h4 class="control-sidebar-subheading">圣诞节活动</h4>
-
-                                <p>2015-12-25</p>
+                    <div class="row">
+                        <div class="col-lg-3 col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-aqua">
+                                <div class="inner">
+                                    <h3>150</h3>
+                                    <p>New Orders</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">
+                                More info <i class="fa fa-arrow-circle-right"></i>
+                                </a>
                             </div>
-                        </a>
-                    </li>
+                        </div>
+                        <!-- ./col -->
+                        <div class="col-lg-3 col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-green">
+                                <div class="inner">
+                                    <h3>53<sup style="font-size: 20px">%</sup></h3>
+                                    <p>Bounce Rate</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-cogs"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">
+                                More info <i class="fa fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                        <div class="col-lg-3 col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-yellow">
+                                <div class="inner">
+                                    <h3>44</h3>
+                                    <p>User Registrations</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-user-plus"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">
+                                More info <i class="fa fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                        <div class="col-lg-3 col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-red">
+                                <div class="inner">
+                                    <h3>65</h3>
+                                    <p>Unique Visitors</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">
+                                More info <i class="fa fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="box box-default collapsed-box">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Expandable</h3>
+                                    <div class="box-tools pull-right">
+                                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                        <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                    <!-- /.box-tools -->
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    The body of the box
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-3">
+                            <div class="box box-success">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Removable</h3>
+                                    <div class="box-tools pull-right">
+                                        <button type="button" class="btn btn-box-tool" data-widget="remove">
+                                        <i class="fa fa-times"></i></button>
+                                    </div>
+                                    <!-- /.box-tools -->
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    The body of the box
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-3">
+                            <div class="box box-warning">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Collapsable</h3>
+                                    <div class="box-tools pull-right">
+                                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <!-- /.box-tools -->
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    The body of the box
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-3">
+                            <div class="box box-danger">
+                                <div class="box-header">
+                                    <h3 class="box-title">Loading state</h3>
+                                </div>
+                                <div class="box-body">
+                                    The body of the box
+                                </div>
+                                <!-- /.box-body -->
+                                <!-- Loading (remove the following to stop the loading)-->
+                                <div class="overlay">
+                                    <i class="fa fa-refresh fa-spin"></i>
+                                </div>
+                                <!-- end loading -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                    <!-- =========================================================== -->
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="box box-default collapsed-box box-solid">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Expandable</h3>
+                                    <div class="box-tools pull-right">
+                                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                        <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                    <!-- /.box-tools -->
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    The body of the box
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-3">
+                            <div class="box box-success box-solid">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Removable</h3>
+                                    <div class="box-tools pull-right">
+                                        <button type="button" class="btn btn-box-tool" data-widget="remove">
+                                        <i class="fa fa-times"></i></button>
+                                    </div>
+                                    <!-- /.box-tools -->
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    The body of the box
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-3">
+                            <div class="box box-warning box-solid">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Collapsable</h3>
+                                    <div class="box-tools pull-right">
+                                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <!-- /.box-tools -->
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    The body of the box
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-3">
+                            <div class="box box-danger box-solid">
+                                <div class="box-header">
+                                    <h3 class="box-title">Loading state</h3>
+                                </div>
+                                <div class="box-body">
+                                    The body of the box
+                                </div>
+                                <!-- /.box-body -->
+                                <!-- Loading (remove the following to stop the loading)-->
+                                <div class="overlay">
+                                    <i class="fa fa-refresh fa-spin"></i>
+                                </div>
+                                <!-- end loading -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                    <!-- =========================================================== -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- AREA CHART -->
+                            <div class="box box-primary">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">
+                                    颜色:<code>.box-primary</code>
+                                    </h3>
+                                    <div class="box-tools pull-right">
+                                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-box-tool" data-widget="remove">
+                                        <i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <div class="box-body   ">
+                                    <p>若是内部使用了<code>.row</code>布局,请移除<code>. </code></p>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                            <!-- box-danger -->
+                            <div class="box box-danger">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">颜色:<code>.box-danger</code></h3>
+                                    <div class="box-tools pull-right">
+                                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-box-tool" data-widget="remove">
+                                        <i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <div class="box-body   ">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.col (LEFT) -->
+                        <div class="col-md-6">
+                            <!-- box-info -->
+                            <div class="box box-info">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">颜色:<code>.box-info</code></h3>
+                                    <div class="box-tools pull-right">
+                                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-box-tool" data-widget="remove">
+                                        <i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <div class="box-body   ">
+                                    Lorem ipsum dolor sit , consectetur adipisicing , sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna . Ut enim ad minim , quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo . Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla . Excepteur sint occaecat cupidatat non , sunt in culpa qui
+                                    officia deserunt mollit anim id est . { }
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                            <!-- box-success -->
+                            <div class="box box-success">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">颜色:<code>.box-success</code></h3>
+                                    <div class="box-tools pull-right">
+                                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-box-tool" data-widget="remove">
+                                        <i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <div class="box-body   ">
+                                    Lorem ipsum dolor sit , consectetur adipisicing , sed do eiusmod tempor incididunt ut labore
+                                    et dolore magna . Ut enim ad minim , quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo . Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla . Excepteur sint occaecat cupidatat non , sunt in culpa qui
+                                    officia deserunt mollit anim id est . { }
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.col (RIGHT) -->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box box-widget">
+                                <div class="box-header with-border">
+                                    <div class="user-block">
+                                        <img class="img-circle" src="dist/img/avatar.png" alt="User Image">
+                                        <span class="username"><a href="#">标题</a></span>
+                                        <span class="description">副标题</span>
+                                    </div>
+                                    <!-- /.user-block -->
+                                    <div class="box-tools">
+                                        <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title=""
+                                        data-original-title="Mark as read">
+                                        <i class="fa fa-circle-o"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-box-tool" data-widget="remove">
+                                        <i class="fa fa-times"></i></button>
+                                    </div>
+                                    <!-- /.box-tools -->
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body   ">
+                                    Lorem ipsum dolor sit , consectetur adipisicing , sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna . Ut enim ad minim , quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo . Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse cillum dolore eu fugiat nulla . Excepteur sint occaecat cupidatat non , sunt
+                                    in culpa qui officia deserunt mollit anim id est . { }
+                                </div>
+                                <!-- /.box-body -->
+                                <div class="box-footer">
+                                </div>
+                                <!-- /.box-footer -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                    </div>
+                    <!-- /.col (RIGHT) -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Box Comment -->
+                            <div class="box box-widget">
+                                <div class="box-header with-border">
+                                    <div class="user-block">
+                                        <img class="img-circle" src="dist/img/avatar.png" alt="User Image">
+                                        <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                        <span class="description">Shared publicly - 7:30 PM Today</span>
+                                    </div>
+                                    <!-- /.user-block -->
+                                    <div class="box-tools">
+                                        <button type="button" class="btn btn-box-tool" data-toggle="tooltip"
+                                        title="Mark as read">
+                                        <i class="fa fa-circle-o"></i></button>
+                                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-box-tool" data-widget="remove">
+                                        <i class="fa fa-times"></i></button>
+                                    </div>
+                                    <!-- /.box-tools -->
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    <img class="img-responsive pad" src="dist/img/avatar.png" alt="Photo">
+                                    <p>I took this photo this morning. What do you guys think?</p>
+                                    <button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> Share
+                                    </button>
+                                    <button type="button" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Like
+                                    </button>
+                                    <span class="pull-right text-muted">127 likes - 3 comments</span>
+                                </div>
+                                <!-- /.box-body -->
+                                <div class="box-footer box-comments">
+                                    <div class="box-comment">
+                                        <!-- User image -->
+                                        <img class="img-circle img-sm" src="dist/img/avatar.png" alt="User Image">
+                                        <div class="comment-text">
+                                            <span class="username">
+                                            Maria Gonzales
+                                            <span class="text-muted pull-right">8:03 PM Today</span>
+                                            </span><!-- /.username -->
+                                            It is a long established fact that a reader will be distracted
+                                            by the readable content of a page when looking at its layout.
+                                        </div>
+                                        <!-- /.comment-text -->
+                                    </div>
+                                    <!-- /.box-comment -->
+                                    <div class="box-comment">
+                                        <!-- User image -->
+                                        <img class="img-circle img-sm" src="dist/img/avatar.png" alt="User Image">
+                                        <div class="comment-text">
+                                            <span class="username">
+                                            Luna Stark
+                                            <span class="text-muted pull-right">8:03 PM Today</span>
+                                            </span><!-- /.username -->
+                                            It is a long established fact that a reader will be distracted
+                                            by the readable content of a page when looking at its layout.
+                                        </div>
+                                        <!-- /.comment-text -->
+                                    </div>
+                                    <!-- /.box-comment -->
+                                </div>
+                                <!-- /.box-footer -->
+                                <div class="box-footer">
+                                    <form action="#" method="post">
+                                        <img class="img-responsive img-circle img-sm" src="dist/img/avatar.png" alt="Alt Text">
+                                        <!-- .img-push is used to add margin to elements next to floating images -->
+                                        <div class="img-push">
+                                            <input type="text" class="form-control input-sm"
+                                            placeholder="Press enter to post comment">
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /.box-footer -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-6">
+                            <!-- Box Comment -->
+                            <div class="box box-widget">
+                                <div class="box-header with-border">
+                                    <div class="user-block">
+                                        <img class="img-circle" src="dist/img/avatar.png" alt="User Image">
+                                        <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                                        <span class="description">Shared publicly - 7:30 PM Today</span>
+                                    </div>
+                                    <!-- /.user-block -->
+                                    <div class="box-tools">
+                                        <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title=""
+                                        data-original-title="Mark as read">
+                                        <i class="fa fa-circle-o"></i></button>
+                                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-box-tool" data-widget="remove">
+                                        <i class="fa fa-times"></i></button>
+                                    </div>
+                                    <!-- /.box-tools -->
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    <!-- post text -->
+                                    <p>Far far away, behind the word mountains, far from the
+                                    countries Vokalia and Consonantia, there live the blind
+                                    texts. Separated they live in Bookmarksgrove right at</p>
+                                    <p>the coast of the Semantics, a large language ocean.
+                                    A small river named Duden flows by their place and supplies
+                                    it with the necessary regelialia. It is a paradisematic
+                                    country, in which roasted parts of sentences fly into
+                                    your mouth.</p>
+                                    <!-- Attachment -->
+                                    <div class="attachment-block clearfix">
+                                        <img class="attachment-img" src="dist/img/photo1.png" alt="Attachment Image">
+                                        <div class="attachment-pushed">
+                                            <h4 class="attachment-heading"><a href="#">Lorem ipsum text
+                                            generator</a></h4>
+                                            <div class="attachment-text">
+                                                Description about the attachment can be placed here.
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                                                <a href="#">more</a>
+                                            </div>
+                                            <!-- /.attachment-text -->
+                                        </div>
+                                        <!-- /.attachment-pushed -->
+                                    </div>
+                                    <!-- /.attachment-block -->
+                                    <!-- Social sharing buttons -->
+                                    <button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> Share
+                                    </button>
+                                    <button type="button" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Like
+                                    </button>
+                                    <span class="pull-right text-muted">45 likes - 2 comments</span>
+                                </div>
+                                <!-- /.box-body -->
+                                <div class="box-footer box-comments">
+                                    <div class="box-comment">
+                                        <!-- User image -->
+                                        <img class="img-circle img-sm" src="dist/img/avatar.png" alt="User Image">
+                                        <div class="comment-text">
+                                            <span class="username">
+                                            Maria Gonzales
+                                            <span class="text-muted pull-right">8:03 PM Today</span>
+                                            </span><!-- /.username -->
+                                            It is a long established fact that a reader will be distracted
+                                            by the readable content of a page when looking at its layout.
+                                        </div>
+                                        <!-- /.comment-text -->
+                                    </div>
+                                    <!-- /.box-comment -->
+                                    <div class="box-comment">
+                                        <!-- User image -->
+                                        <img class="img-circle img-sm" src="dist/img/avatar.png" alt="User Image">
+                                        <div class="comment-text">
+                                            <span class="username">
+                                            Nora Havisham
+                                            <span class="text-muted pull-right">8:03 PM Today</span>
+                                            </span><!-- /.username -->
+                                            The point of using Lorem Ipsum is that it has a more-or-less
+                                            normal distribution of letters, as opposed to using
+                                            'Content here, content here', making it look like readable English.
+                                        </div>
+                                        <!-- /.comment-text -->
+                                    </div>
+                                    <!-- /.box-comment -->
+                                </div>
+                                <!-- /.box-footer -->
+                                <div class="box-footer">
+                                    <form action="#" method="post">
+                                        <img class="img-responsive img-circle img-sm" src="dist/img/avatar.png" alt="Alt Text">
+                                        <!-- .img-push is used to add margin to elements next to floating images -->
+                                        <div class="img-push">
+                                            <input type="text" class="form-control input-sm"
+                                            placeholder="Press enter to post comment">
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /.box-footer -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+            <!-- Main Footer -->
+            <footer class="main-footer">
+                <!-- To the right -->
+                <div class="pull-right hidden-xs">
+                    S-NEXT
+                </div>
+                <!-- Default to the left -->
+                <strong>Copyright &copy; 2015 <a href="#">S-NEXT</a>.</strong> All rights reserved.
+            </footer>
+            <!-- Control Sidebar -->
+            <aside class="control-sidebar control-sidebar-dark">
+                <!-- Create the tabs -->
+                <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+                    <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+                    <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
                 </ul>
-                <!-- /.control-sidebar-menu -->
-                <h3 class="control-sidebar-heading">任务进度</h3>
-                <ul class="control-sidebar-menu">
-                    <li>
-                        <a href="javascript:;">
-                            <h4 class="control-sidebar-subheading">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <!-- Home tab content -->
+                    <div class="tab-pane active" id="control-sidebar-home-tab">
+                        <h3 class="control-sidebar-heading">最近活动</h3>
+                        <ul class="control-sidebar-menu">
+                            <li>
+                                <a href="javascript:;">
+                                <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+                                <div class="menu-info">
+                                    <h4 class="control-sidebar-subheading">圣诞节活动</h4>
+                                    <p>2015-12-25</p>
+                                </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.control-sidebar-menu -->
+                        <h3 class="control-sidebar-heading">任务进度</h3>
+                        <ul class="control-sidebar-menu">
+                            <li>
+                                <a href="javascript:;">
+                                <h4 class="control-sidebar-subheading">
                                 自定义模版设计
                                 <span class="label label-danger pull-right">70%</span>
-                            </h4>
-
-                            <div class="progress progress-xxs">
-                                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <!-- /.control-sidebar-menu -->
-            </div>
-            <!-- /.tab-pane -->
-            <!-- Stats tab content -->
-            <div class="tab-pane" id="control-sidebar-stats-tab">状态面板</div>
-            <!-- /.tab-pane -->
-            <!-- Settings tab content -->
-            <div class="tab-pane" id="control-sidebar-settings-tab">
-                <form method="post">
-                    <h3 class="control-sidebar-heading">常规设置</h3>
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            关闭消息通知
-                            <input type="checkbox" class="pull-right" checked>
-                        </label>
-
-                        <p>
-                            勾选了将停止所有信息的接受(紧急通知不在内)
-                        </p>
+                                </h4>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                                </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.control-sidebar-menu -->
                     </div>
-                    <!-- /.form-group -->
-                </form>
-            </div>
-            <!-- /.tab-pane -->
+                    <!-- /.tab-pane -->
+                    <!-- Stats tab content -->
+                    <div class="tab-pane" id="control-sidebar-stats-tab">状态面板</div>
+                    <!-- /.tab-pane -->
+                    <!-- Settings tab content -->
+                    <div class="tab-pane" id="control-sidebar-settings-tab">
+                        <form method="post">
+                            <h3 class="control-sidebar-heading">常规设置</h3>
+                            <div class="form-group">
+                                <label class="control-sidebar-subheading">
+                                    关闭消息通知
+                                    <input type="checkbox" class="pull-right" checked>
+                                </label>
+                                <p>
+                                勾选了将停止所有信息的接受(紧急通知不在内)
+                                </p>
+                            </div>
+                            <!-- /.form-group -->
+                        </form>
+                    </div>
+                    <!-- /.tab-pane -->
+                </div>
+            </aside>
+            <!-- /.control-sidebar -->
+            <div class="control-sidebar-bg"></div>
         </div>
-    </aside>
-    <!-- /.control-sidebar -->
-    <div class="control-sidebar-bg"></div>
-</div>
-<!-- ./wrapper -->
-<!-- REQUIRED JS SCRIPTS -->
-<!-- jQuery 2.1.4 -->
-<script src="dist/js/jquery-2.1.4.min.js"></script>
-<!-- Bootstrap 3.3.5 -->
-<script src="dist/js/bootstrap.min.js"></script>
-
-<!--velocity.js-->
-<script src="dist/js/plugins/velocity/velocity.min.js"></script>
-
-<!-- S-NEXT JS-->
-<script src="dist/js/s-next.js"></script>
-
-</body>
-
+        <!-- ./wrapper -->
+        <!-- REQUIRED JS SCRIPTS -->
+        <!-- jQuery 2.1.4 -->
+        <script src="dist/js/jquery-2.1.4.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="dist/js/bootstrap.min.js"></script>
+        <!--velocity.js-->
+        <script src="dist/js/plugins/velocity/velocity.min.js"></script>
+        <!-- S-NEXT JS-->
+        <script src="dist/js/s-next.js"></script>
+    </body>
 </html>
-
